@@ -1,16 +1,14 @@
 close all, clear all, clc
 
 w=load('1979_2020.dat');
-
 [n m]=size(w);
-w = w(1:1000,:)
 
 storm=[];
 numb=1;
 for t=1:n
-    if w(t)>1%ïðåâûøåíèå âûñîòîé âîëíû ïðîãîâîãî çíà÷åíèé
+    if w(t)>1 % wave height exceeding threshold
     storm=[storm;w(t,:)];
-    if w(t)>1&w(t+1)<=1
+    if w(t)>1&w(t+1)<=1 % end of storm
     a=num2str(numb);
     namefile=['storm',a,'.dat'];
     dlmwrite(namefile,storm);
