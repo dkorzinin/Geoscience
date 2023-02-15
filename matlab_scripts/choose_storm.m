@@ -6,8 +6,8 @@ for k=1:2263
     namefile=['storm',a,'.dat'];
     st=load(namefile);
     [siz miz]=size(st);
-%     îñòàâëÿåì òîëüêî òå øòîðìà, äëèòåëüíîñòü êîòîðûõ áîëüøå è ðàâíà 12
-%     ÷àñàì, à òàêæå òå øòîðìà â êîòîðûõ âûäåëÿåÿòñÿ ñòàäèÿ çàòóõàíèÿ
+% we choose storms with duration is greater than and equal to 12 hours, 
+% as well as those storms in which the attenuation stage is distinguished
     if siz>=5 & st(siz,1) < max(st(:,1))
         g=num2str(numb);
         namefile=['ch_storm',g,'.dat'];
