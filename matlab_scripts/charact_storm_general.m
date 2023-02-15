@@ -5,7 +5,7 @@ for k=1:1355
     a=num2str(k);
     namefile=['ch_storm',a,'.dat'];
     storm=load(namefile);
-%     создаем массив характеристик штормов
+%     Г±Г®Г§Г¤Г ГҐГ¬ Г¬Г Г±Г±ГЁГў ГµГ Г°Г ГЄГІГҐГ°ГЁГ±ГІГЁГЄ ГёГІГ®Г°Г¬Г®Гў
     [nn mm] = size(storm);
     t = (nn*3)-3;
     maxh = max(storm(:,1));
@@ -20,7 +20,7 @@ for k=1:1355
     storm_id = k;
     char = [storm_id month t maxh meanh stdh maxT meanT stdT meand stdd];
     storm_char = [storm_char; char];
-%     обнуляем
+%     Г®ГЎГ­ГіГ«ГїГҐГ¬
     char = [];
 end
 
