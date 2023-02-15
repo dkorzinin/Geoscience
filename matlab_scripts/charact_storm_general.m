@@ -5,7 +5,7 @@ for k=1:1355
     a=num2str(k);
     namefile=['ch_storm',a,'.dat'];
     storm=load(namefile);
-%     ñîçäàåì ìàññèâ õàðàêòåðèñòèê øòîðìîâ
+%     create an array of storm characteristics
     [nn mm] = size(storm);
     t = (nn*3)-3;
     maxh = max(storm(:,1));
