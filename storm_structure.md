@@ -26,7 +26,7 @@
  
 <div align="center">
   
-| <image src = "/images/4_storms_min.jpg" width = "800"> | 
+| <image src = "/images/4_storms_min_2.jpg" width = "800"> | 
 |:--:| 
 | *Рисунок 2 -  Примеры 4-х штормов из исследуемого набора данных.* |
   
