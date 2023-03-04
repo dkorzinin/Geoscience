@@ -55,4 +55,4 @@
   
   <image
   src="/images/R_diff.jpg">
-*<div align="center">  Рисунок.3 Гистограмма распределения значений $R_{mean}$ и $R_{med}$</div>*
+*<div align="center">  Рисунок.3 Гистограмма распределения значений $R_{mean}$ и $R_{med}$ </div>*
